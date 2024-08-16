@@ -1,6 +1,5 @@
 import random
 import time
-timeaim = 6
 letters = "ABSDEFRLINK"
 
 def randomletters():
@@ -9,6 +8,6 @@ def randomletters():
 while True:
     for i in range(7):
         print(randomletters())
-        time.sleep(timeaim / 7)
+        time.sleep(1.5)
     print("solution done, restarting")
     time.sleep(2)
