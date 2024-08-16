@@ -11,6 +11,6 @@ while True:
         print(randomletters())
         time.sleep(timedelay)
     print("solution done, restarting")
-    if timedelay > 1:
+    if timedelay >= 0.5:
         timedelay -= 0.1
     time.sleep(2)
