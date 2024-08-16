@@ -1,6 +1,7 @@
 import random
 import time
 letters = "ABSDEFRLINK"
+timedelay = 2
 
 def randomletters():
     return(letters[random.randint(0, len(letters))-1] + letters[random.randint(0, len(letters))-1])
@@ -8,6 +9,8 @@ def randomletters():
 while True:
     for i in range(7):
         print(randomletters())
-        time.sleep(1.5)
+        time.sleep(timedelay)
     print("solution done, restarting")
+    if timedelay > 1:
+        timedelay -= 0.1
     time.sleep(2)
