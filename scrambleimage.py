@@ -1,5 +1,4 @@
 import random
-import numpy as np
 
 letters = "ABSDEFRLINK"
 sol = []
@@ -36,7 +35,6 @@ for i in range(7):
     randomletters()
 
 print(sol)
-
 
 dic = {
     "UL": [2, 1, 1, 1, 1, 1, 1],
