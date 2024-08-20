@@ -1,7 +1,9 @@
 import random
 import time
 letters = "ABSDEFRLINK"
-timedelay = 2
+timedelay = float(input("Start delay between moves (s)? \n"))
+enddelay = float(input("final delay between moves (s) ? \n"))
+speedup = 0.1
 sol = []
 
 state = {
@@ -74,7 +76,8 @@ while True:
     printstate()
     success = "y" in input("Did that work? \n")
     if success:
-        timedelay -= 0.1
+        if timedelay > enddelay:
+            timedelay -= speedup
         print("solution done, restarting, new time interval: " + str(round(timedelay, 1)))
     else:
         print(sol)
